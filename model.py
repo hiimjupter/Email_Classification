@@ -55,6 +55,12 @@ def remove_stopwords(tokens):
     return [token for token in tokens if token not in stop_words]
 
 
+# Question 8
+input_text = ["Pho", "is", "a", "popular", "Vietnamese", "noodle", "soup"]
+result = remove_stopwords(input_text)
+print(result)
+
+
 def stemming(tokens):
     """Apply stemming to reduce words to their root form (e.g., 'running' -> 'run')."""
     stemmer = nltk.PorterStemmer()
